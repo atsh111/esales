@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.styros.esales.entity.UsersEntity">
+        <table name="users" schema="esales" catalog="esales"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="userid">
+                <column name="userid" nullable="false"/>
+            </basic>
+            <basic name="username">
+                <column name="username" nullable="false"/>
+            </basic>
+            <basic name="pwd">
+                <column name="pwd" nullable="false"/>
+            </basic>
+            <basic name="fullname">
+                <column name="fullname" nullable="false"/>
+            </basic>
+            <basic name="admin">
+                <column name="admin" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="locationid">
+                <column name="locationid" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

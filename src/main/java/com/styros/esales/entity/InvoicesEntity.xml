@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.styros.esales.entity.InvoicesEntity">
+        <table name="invoices" schema="esales" catalog="esales"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="date">
+                <column name="date" nullable="false"/>
+            </basic>
+            <basic name="customeraddress">
+                <column name="customeraddress" nullable="false"/>
+            </basic>
+            <basic name="salesmanid">
+                <column name="salesmanid" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="details">
+                <column name="details" nullable="false"/>
+            </basic>
+            <basic name="salelocation">
+                <column name="salelocation" nullable="false"/>
+            </basic>
+            <basic name="invoicenum">
+                <column name="invoicenum" nullable="false"/>
+            </basic>
+            <basic name="data">
+                <column name="data" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.styros.esales.entity.LocationRouteMapEntity">
+        <table name="location_route_map" schema="esales" catalog="esales"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="routeid">
+                <column name="routeid" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="locationid">
+                <column name="locationid" nullable="false" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

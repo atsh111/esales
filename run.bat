@@ -1,0 +1,1 @@
+java -Dspring.config.location=C:\softwares\application.properties -jar esales-1.0.jar

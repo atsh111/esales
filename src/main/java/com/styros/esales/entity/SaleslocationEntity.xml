@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="com.styros.esales.entity.SaleslocationEntity">
+        <table name="saleslocation" schema="esales" catalog="esales"/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="name">
+                <column name="name" nullable="false"/>
+            </basic>
+            <basic name="address">
+                <column name="address" nullable="false"/>
+            </basic>
+            <basic name="gstno">
+                <column name="gstno" nullable="false"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
